@@ -15,7 +15,7 @@ function App() {
      if (localStorage.getItem('userId')){
         dispath(authActions.login())
      }
-  },[])
+  },[dispath])
 
   const isLoggedIn= useSelector(state=>state.isLoggedIn);
   console.log(isLoggedIn)
